@@ -3,24 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>Tienda Online</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 
-  
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
-  <h1>Tienda Online</h1>
+  <header>
+    <h1>🛒 Tienda Online</h1>
+  </header>
 
-  <h2>Productos</h2>
-  <div id="productos"></div>
+  <main>
+    <section>
+      <h2>Productos</h2>
+      <div id="productos" class="grid"></div>
+    </section>
 
-  <h2>Carrito</h2>
-  <div id="carrito"></div>
+    <section>
+      <h2>Carrito</h2>
+      <div id="carrito"></div>
+    </section>
 
-  <button onclick="comprar()">Finalizar compra</button>
+    <section>
+      <h2>Checkout</h2>
 
-  <script src="app.js"></script>
+      <input type="text" id="nombre" placeholder="Nombre">
+      <input type="email" id="email" placeholder="Email">
+
+      <button id="btnComprar">Finalizar compra</button>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
